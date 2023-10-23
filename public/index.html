@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP RPG Inventory</title>
+    <script src="./bundle.js" defer></script>
+</head>
+
+<body>
+    <h1>OOP RPG Inventory</h1>
+    <main id="container">
+        <form id="createCharacterForm">
+            <h2>Create Your Character</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="race">Race:</label>
+            <input type="text" id="race" required>
+            <h3>Fighting Style:</h3>
+            <input type="radio" name="fightingStyle" value="melee" id="melee">
+            <label for="melee">Melee</label>
+            <input type="radio" name="fightingStyle" value="ranged" id="ranged">
+            <label for="ranged">Ranged</label>
+            <button type="submit">Create Character</button>
+        </form>
+        <h2 id="character-name">Character Name: </h2>
+        <h2>Inventory</h2>
+        <div id="inventoryContainer">
+        </div>
+    </main>
+</body>
+</html>
